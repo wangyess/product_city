@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>这个天才又来啦❤️</title>
+</head>
+<link rel="stylesheet" href="main.css">
+<body>
+<div id="one">
+    <span data-link="home">首页</span>
+    <span data-link="admin">后台管理系统</span>
+</div>
+
+<div data-page="home" class="thr">
+    <h3>首页</h3>
+</div>
+
+<div data-page="admin" class="two">
+    <br>
+    <h3>管理页面</h3>
+    <br>
+    <form action="" id="my-form">
+        <input type="hidden" name="id">
+        <input type="text" name="title" placeholder="title">
+        <input type="text" name="price" placeholder="price">
+        <button type="submit">添加</button>
+        <button type="button" id="btn_search">查找</button>
+        <button type="button" id="btn_set">重置</button>
+    </form>
+
+    <br>
+    <div class="mmd">
+        <table border='0' becolor='#333' width='600' cellspacing='1' bgcolor='#333'>
+            <caption>商品列表</caption>
+            <thead>
+            <tr align='center' bgcolor='#fff'>
+                <th width="150">ID</th>
+                <th width="300">title</th>
+                <th width="150">price</th>
+                <th width="50">ADD</th>
+                <th width="50">DEL</th>
+                <th width="50">HOT</th>
+            </tr>
+            </thead>
+            <tbody id="t-body">
+
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <div class="mmd">
+        <table border='0' becolor='#333' width='600' cellspacing='1' bgcolor='#333'>
+            <caption>热卖列表</caption>
+            <thead>
+            <tr align='center' bgcolor='#fff'>
+                <th width="150">ID</th>
+                <th width="300">title</th>
+                <th width="150">price</th>
+                <th width="50">ADD</th>
+                <th width="50">DEL</th>
+            </tr>
+            </thead>
+            <tbody id="tt-body">
+
+            </tbody>
+        </table>
+    </div>
+    <br>
+
+</div>
+
+<script src="local_story.js"></script>
+<script src="router.js"></script>
+<script src="product_main.js"></script>
+<script src="product_render.js"></script>
+<script src="hot_product.js"></script>
+<script src="hot_render.js"></script>
+</body>
+</html>
